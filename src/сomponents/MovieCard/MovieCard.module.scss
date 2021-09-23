@@ -1,0 +1,119 @@
+@import '../../scss/variables.scss';
+
+.movieCard {
+	display: inline-block;
+	width: 253px;
+	cursor: pointer;
+	&:hover .preview {
+		display: block;
+	}
+	&:hover .title {
+		color: $colorWhite;
+	}
+	&:hover .overlay {
+		position: absolute;
+	}
+	@media (max-width: 1600px) {
+		width: 210px;
+	}
+}
+
+.overlay {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: $colorOverlay;
+	border-radius: 5px;
+}
+
+.wrapImage {
+	position: relative;
+	max-width: 253px;
+	width: 100%;
+	height: 366px;
+	@media (max-width: 1600px) {
+		max-width: 210px;
+		height: 304px;
+	}
+}
+
+.image {
+	height: 100%;
+	width: 100%;
+	display: block;
+	border-radius: 5px;
+}
+
+.rating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: -8px;
+	top: 6px;
+	background-color: $colorGreen;
+	color: $colorWhite;
+	width: 42px;
+	height: 24px;
+	border-radius: 3px;
+	font-size: 14px;
+	@media (max-width: 1600px) {
+		left: -7px;
+		top: 5px;
+		width: 35px;
+		height: 20px;
+		font-size: 12px;
+	}
+}
+
+.preview {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 62px;
+	height: 62px;
+	background: $colorPreview url('../../assets/images/icon-play.png') no-repeat
+		center;
+	border-radius: 50%;
+	display: none;
+	@media (max-width: 1600px) {
+		width: 51px;
+		height: 51px;
+	}
+}
+
+.content {
+	color: $colorGrey;
+}
+
+.title {
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 9px;
+	line-height: 25px;
+	@media (max-width: 1600px) {
+		font-size: 17px;
+		margin-top: 12px;
+		margin-bottom: 7px;
+		line-height: 20px;
+	}
+}
+
+.genre {
+	line-height: 1.5;
+	@media (max-width: 1600px) {
+		line-height: 1.2;
+	}
+	& span {
+		margin-right: 10px;
+		font-size: 14px;
+		display: inline-block;
+		color: $colorGreyDark;
+		@media (max-width: 1600px) {
+			margin-right: 8px;
+			font-size: 11px;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+@import './scss/variables.scss';
+
+.wrapper {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	background-color: $colorBackground;
+	min-height: 100%;
+}
+
+.container {
+	max-width: 1585px;
+	margin: 0 auto;
+	@media (max-width: 1600px) {
+		max-width: 1345px;
+		padding: 0 15px;
+	}
+}
