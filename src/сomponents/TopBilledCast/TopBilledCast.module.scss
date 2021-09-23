@@ -1,0 +1,39 @@
+@import '../../scss/variables.scss';
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title {
+	font-size: 28px;
+	@media (max-width: 1600px) {
+		font-size: 23px;
+	}
+}
+
+.button {
+	background-color: $colorBackground;
+	color: $colorWhite;
+	padding: 6px 9px;
+	border: 1px solid $colorWhite;
+	border-radius: 5px;
+	cursor: pointer;
+	&:hover {
+		background-color: $colorWhite;
+		color: $colorBlack;
+	}
+	@media (max-width: 1600px) {
+		padding: 5px 7px;
+	}
+}
+
+.wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	padding-top: 30px;
+	@media (max-width: 1600px) {
+		padding-top: 25px;
+	}
+}

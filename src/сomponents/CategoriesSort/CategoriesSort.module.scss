@@ -1,0 +1,29 @@
+@import '../../scss/variables.scss';
+
+.categoriesSort {
+	display: inline-flex;
+	overflow: hidden;
+	border-radius: 10px;
+	border: 1px solid rgb(255, 255, 255);
+	background-color: $colorBackground;
+	& input {
+		display: none;
+		&:checked + label {
+			background-color: $colorWhite;
+			color: $colorBlack;
+		}
+	}
+	& label {
+		font-size: 16px;
+		padding: 10px 20px;
+		color: $colorWhite;
+		cursor: pointer;
+		@media (max-width: 1600px) {
+			font-size: 13px;
+			padding: 8px 16px;
+		}
+		&:not(:last-of-type) {
+			border-right: 1px solid $colorWhite;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+@import '../../scss/variables.scss';
+
+.pagination {
+	display: flex;
+}
+
+.item {
+	width: 40px;
+	height: 40px;
+	font-size: 18px;
+	margin-right: 10px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	border: 1px solid transparent;
+	cursor: pointer;
+	@media (max-width: 1600px) {
+		width: 33px;
+		height: 33px;
+		font-size: 15px;
+		margin-right: 8px;
+		line-height: 33px;
+	}
+	&:hover {
+		border: 1px solid $colorGreen;
+	}
+	&.active {
+		background-color: $colorGreen;
+	}
+}

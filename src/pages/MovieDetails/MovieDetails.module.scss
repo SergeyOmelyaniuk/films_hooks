@@ -1,0 +1,17 @@
+.movieDetails {
+	padding-top: 32px;
+	@media (max-width: 1600px) {
+		padding-top: 26px;
+	}
+}
+
+.titleRecommendations {
+	font-size: 34px;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 50px;
+	@media (max-width: 1600px) {
+		font-size: 28px;
+		margin-bottom: 42px;
+	}
+}
